@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Space tourism website</title>
+  <link rel="stylesheet" href="./style/destination-style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header id="header">
+    <div class="logo">
+      <a href="./index.html"><img src="./assets/shared/logo.svg"></a>
+    </div>
+    <nav id="nav">
+      <button id="btn-hamb">
+        <img id="icon-hamb" onclick="mudarImg()" src="./assets/shared/icon-hamburger.svg">
+      </button>
+      <div id="bg-color"> </div>
+      <ul id="menu">
+        <li><a href="index.html">00 Home</a></li>
+        <li><a href="Destination.html">01 Destination</a></li>
+        <li><a href="Crew.html">02 Crew</a></li>
+        <li><a href="#">03 Technology</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+      <h2 class="pick-destination"><span class="letter-color">01</span> Pick your Destination</h2>
+      <div id="destination-container">
+          <div id="planet-img">
+              <img id="imagem" src="./assets/destination/image-moon.png">
+          </div>
+          <div id="planet-info">
+            <div id="planet-button">
+              <button onclick="mudaTexto('MOON', description[0], '384,400 KM', '3 DAYS'); mudarImagemMoon()">Moon</button>
+              <button onclick="mudaTexto('MARS', description[1], '225 MIL. KM', '9 MONTHS'); mudarImagemMars()">Mars</button>
+              <button onclick="mudaTexto('EUROPA', description[2], '628 MIL. KM', '3 YEARS'); mudarImagemEuropa()">Europa</button>
+              <button onclick="mudaTexto('TITAN', description[3], '1.6 BIL. KM', '7 YEARS'); mudarImagemTitan()">Titan</button>
+            </div>
+            <h1 id="planet-name">Moon</h1>
+            <p id="planet-description">See our planet as you've never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you're there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+            <div id="distance-time">
+                <div id="distance-container">
+                    <h3>Avg. Distance</h3>
+                    <h2 id="distance">384,400 km</h2>
+                </div>
+                <div id="time-container">
+                    <h3>Est. Travel Time</h3>
+                    <h2 id="time">3 days</h2>
+                </div>
+            </div>
+          </div>
+      </div>
+  </main>
+  <script src="./script-hamb.js"></script>
+</body>
+</html>

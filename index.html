@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Space tourism website</title>
+  <link rel="stylesheet" href="./style/home-style.css"
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header id="header">
+    <div class="logo">
+      <a href="./index.html"><img src="./assets/shared/logo.svg"></a>
+    </div>
+    <nav id="nav">
+      <button id="btn-hamb">
+        <img id="icon-hamb" onclick="mudarImg()" src="./assets/shared/icon-hamburger.svg">
+      </button>
+      <div id="bg-color"> </div>
+      <ul id="menu">
+        <li><a href="index.html">00 Home</a></li>
+        <li><a href="Destination.html">01 Destination</a></li>
+        <li><a href="Crew.html">02 Crew</a></li>
+        <li><a href="#">03 Technology</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="home-main-section">
+      <div class="infos">
+        <h3>So, you want to travel to</h3>
+        <h1>Space</h1>
+        <p>Let's face it; if you want to go to space, you might as well genuinely go to 
+        outer space and not hover kind of on the edge of it. Well sit back, and relax 
+        because we'll give you a truly out of this world experience!</p>
+      </div>
+      <div class="btn-explore">
+        <a class="explore" href="#">Explore</a>
+      </div>
+    </section>
+  </main>
+  <script src="./script-hamb.js"></script>
+</body>
+</html>
