@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Space tourism website</title>
+  <link rel="stylesheet" href="./style/technology-style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header id="header">
+    <div class="logo">
+      <a href="./index.html"><img src="./assets/shared/logo.svg"></a>
+    </div>
+    <nav id="nav">
+      <button id="btn-hamb">
+        <img id="icon-hamb" onclick="mudarImg()" src="./assets/shared/icon-hamburger.svg">
+      </button>
+      <div id="bg-color"> </div>
+      <ul id="menu">
+        <li><a href="index.html">00 Home</a></li>
+        <li><a href="Destination.html">01 Destination</a></li>
+        <li><a href="Crew.html">02 Crew</a></li>
+        <li><a href="Technology.html">03 Technology</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <main>
+        <h2 class="tech"><span class="letter-color">03</span> Space Launch 01</h2>
+
+        <div id="tech-container">
+
+          <div class="tech-slides">
+
+            <input class="input" type="radio" name="slide" id="slide1" checked>
+        	  <input class="input" type="radio" name="slide" id="slide2">
+        	  <input class="input" type="radio" name="slide" id="slide3">
+
+            <div class="slide s1">
+
+              <div class="slide-img">
+                <img id="imgTech1" src="./assets/technology/image-launch-vehicle-landscape.jpg">
+              </div>
+
+              <div class="slide-text">
+                <h2 class="tech-subtitle">The Terminology ...</h2>
+                <h2 class="tech-title">Launch Vehicle</h2>
+                <p class="tech-info">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
+              </div>
+
+            </div>
+
+            <div class="slide">
+
+              <div class="slide-img">
+                <img id="imgTech2" src="./assets/technology/image-spaceport-landscape.jpg">
+              </div>
+
+              <div class="slide-text">
+                <h2 class="tech-subtitle">The Terminology ...</h2>
+                <h2 class="tech-title">Spaceport</h2>
+                <p class="tech-info">A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.</p>
+              </div>
+
+            </div>
+
+            <div class="slide">
+
+              <div class="slide-img">
+                <img id="imgTech3" src="./assets/technology/image-space-capsule-landscape.jpg">
+              </div>
+
+              <div class="slide-text">
+                <h2 class="tech-subtitle">The Terminology ...</h2>
+                <h2 class="tech-title">Space Capsule</h2>
+                <p class="tech-info">A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="navigation">
+
+            <label class="bar" for="slide1">1</label>
+            <label class="bar" for="slide2">2</label>
+            <label class="bar" for="slide3">3</label>
+
+          </div>
+          
+        </div>
+    </main>
+    <script src="./script-hamb.js"></script>
+</body>
+</html>
