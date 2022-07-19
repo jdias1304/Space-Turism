@@ -1,0 +1,474 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url(../assets/technology/background-technology-mobile.jpg);
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    align-items: center;
+}
+
+#header a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+#btn-hamb {
+    display: block;
+    position: relative;
+    z-index: 6;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    margin-top: 99px;
+    margin-left: 32px;
+    gap: 32px;
+    position: fixed;
+    top: 0;
+    left: 150px;
+    width: 100%;
+    height: 0px;
+    z-index: 5;
+    transition: .5s cubic-bezier(.74,-0.27,.41,1.18);
+    overflow-y: hidden;
+}
+
+#menu a {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+}
+
+#bg-color {
+    height: 0px;
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 12px );
+    -webkit-backdrop-filter: blur( 12px );
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 150px;
+    width: 100%;
+    transition: 1s;
+    overflow-y: hidden;
+
+}
+
+#nav.active #menu {
+    height: 100vh;
+    overflow-y: auto;
+}
+
+#nav.active #bg-color {
+    height: 100vh;
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 12px );
+    -webkit-backdrop-filter: blur( 12px );
+    overflow-y: auto;
+}
+
+main {
+    padding: 0rem 0rem;
+}
+
+.tech {
+    margin-top: 0.625rem;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.169rem;
+}
+
+.letter-color {
+    color: rgb(66, 66, 66);
+    margin-right: 1.18rem;
+}
+
+#tech-container {
+    margin-top: 2rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide-img {
+    display: flex;
+    justify-content: center;
+}
+
+.slide {
+    width: 33.33%;
+    transition: .6s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slide-img {
+    width: 80%;
+    height: 170px;
+}
+
+.slide-img img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.tech-slides {
+    width: 300%;
+    height: 100%;
+    display: flex;
+}
+
+input {
+    display: none;
+}
+
+.navigation {
+    position: absolute;
+    top: 202px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+.bar {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+}
+
+.bar:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.bar:hover {
+    background-color: white;
+    color: black;
+}
+
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1 {
+    margin-left: -33.33%;
+}
+
+#slide3:checked ~ .s1 {
+    margin-left: -66.66%;
+}
+
+.slide-text {
+    width: 327px;
+    height: 220px;
+    margin: 6.25rem 0rem 0rem 0rem;
+    text-align: center;
+}
+
+.tech-subtitle {
+    font-size: 0.875rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.148rem;
+    font-weight: 200;
+}
+
+.tech-title {
+    margin-top: 0.563rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: 'Bellefair', sans-serif;
+    font-weight: 500;
+}
+
+.tech-info {
+    margin-top: 1rem;
+    font-size: 0.938rem;
+    line-height: 1.563rem;
+    font-family: 'Barlow', sans-serif;
+}
+
+/* Tablet Screen */
+
+@media screen and (min-width: 768px) {
+    body{
+        background-image: url(../assets/technology/background-technology-tablet.jpg);
+        color: white;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0rem;
+        align-items: center;
+        
+    }
+
+    .logo {
+        margin-left: 39px;
+    }
+
+    .logo img {
+        width: 48px;
+        height: 48px;
+    }
+
+    #nav {
+        width: 450px;
+        height: 96px;
+        background-color: #161924;
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: row;
+        height: 96px;
+        margin: 0px 0px 0px 30px;
+        margin-top: 0px;
+        align-items: center;
+        position: static;
+        width: 356px;
+        font-size: 14px;
+        overflow: hidden;
+        transition: 0s;
+    }
+
+
+    #menu li:nth-child(4) {
+        border-bottom: 2px solid white;
+        padding-top: 32px;
+        padding-bottom: 28px;
+    }
+
+    #menu a {
+        font-size: 14px;
+    }
+
+    #btn-hamb {
+        display: none;
+    }
+
+    .tech {
+        margin-top: 2.5rem;
+        text-align: left;
+        font-size: 1.25rem;
+        font-family: 'Barlow Condensed', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.211rem;
+        margin-left: 2.406rem;
+        font-weight: 200;
+    }
+    
+    .letter-color {
+        color: rgb(66, 66, 66);
+        margin-right: 1rem;
+    }
+
+    .slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slide-img {
+        width: 768px;
+        height: 310px;
+    }
+
+    .slide-text {
+        width: 458px;
+        height: 237px;
+        margin: 10rem 0rem 6.063rem 0rem;
+        text-align: center;
+    }
+
+    .navigation {
+        position: absolute;
+        top: 360px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+    }
+
+    .bar {
+        width: 3.75rem;
+        height: 3.75rem;
+        border-radius: 3.75rem;
+    }
+
+    .tech-subtitle {
+        font-size: 1rem;
+        letter-spacing: 0.169rem;
+    }
+
+    .tech-title {
+        margin-top: 1rem;
+        font-size: 2.5rem;
+    }
+
+    .tech-info {
+        font-size: 1rem;
+        line-height: 1.75rem;
+        margin-top: 1rem;
+    }
+}
+
+/* Desktop screen */
+
+@media screen and (min-width: 1440px) {
+    body{
+        background-image: url(../assets/technology/background-technology-desktop.jpg);
+        color: white;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0rem;
+        align-items: center;
+        margin-bottom: 6.62rem;
+        margin-top: 2.5rem;
+    }
+
+    .logo {
+        margin-left: 55px;
+    }
+
+    .logo img {
+        width: 48px;
+        height: 48px;
+    }
+
+    #nav {
+        width: 830px;
+        height: 96px;
+        background: rgba( 255, 255, 255, 0.05 );
+        backdrop-filter: blur( 16.5px );
+        -webkit-backdrop-filter: blur( 16.5px );
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: row;
+        height: 96px;
+        margin: 0px 165px 0px 123px;
+        align-items: center;
+        justify-content: center;
+        position: static;
+        width: 542px;
+        font-size: 16px;
+        overflow: hidden;
+        transition: 0s;
+    }
+
+    #menu li:nth-child(4) {
+        border-bottom: 2px solid white;
+        padding-top: 39px;
+        padding-bottom: 35px;
+    }
+
+    #menu li:hover {
+        border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+        padding-top: 39px;
+        padding-bottom: 35px;
+    }
+
+    .tech {
+        margin-left: 10.406rem;
+        font-size: 1.75rem;
+        letter-spacing: 0.295rem;
+    }
+
+    .slide {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: 5rem;
+        justify-content: space-between;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 205px;
+        top: 160px;
+        gap: 2rem;
+    }
+
+    .bar {
+        width: 80px;
+        height: 80px;
+        border-radius: 80px;
+    }
+
+    .slide-img {
+        margin-top: 2rem;
+        width: 515px;
+        height: 527px;
+    }
+
+    .slide-text {
+        margin-left: 20.313rem;
+        width: 470px;
+        height: 303px;
+    }
+
+    .tech-subtitle {
+        text-align: left;
+        font-size: 1rem;
+        letter-spacing: 0.167rem;
+    }
+
+    .tech-title {
+        text-align: left;
+        font-size: 3.5rem;
+    }
+
+    .tech-info {
+        font-size: 1.125rem;
+        line-height: 2rem;
+        text-align: left;
+    }
+
+    #tech-container {
+        max-width: 1700px;
+        margin: 0 auto;
+    }
+
+
+}
