@@ -159,6 +159,7 @@ main {
     height: 13px;
     border-radius: 10px;
     background-color: rgb(66, 66, 66);
+    cursor: pointer;
 }
 
 .bar:not(:last-child) {
