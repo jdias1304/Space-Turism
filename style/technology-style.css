@@ -165,6 +165,7 @@ input {
     justify-content: center;
     align-items: center;
     border: 1px solid white;
+    cursor: pointer;
 }
 
 .bar:not(:last-child) {
